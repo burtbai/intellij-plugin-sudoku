@@ -1,7 +1,11 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# sudoku Changelog
+# Sudoku Changelog
+
 
 ## [Unreleased]
+
+## [0.0.1] - 2022-10-20
 ### Added
-- Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
+- Support IntelliJ 2021.3+
+- Add SPACE key to clear numbers and descriptions.

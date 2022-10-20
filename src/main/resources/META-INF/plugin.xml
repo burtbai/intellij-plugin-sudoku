@@ -1,18 +1,14 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.burtbai.sudoku</id>
-    <name>sudoku</name>
-    <vendor>burtbai</vendor>
+    <name>Sudoku</name>
+    <vendor email="burtbai@hotmail.com" url="https://github.com/burtbai">burtbai</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.burtbai.sudoku.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.burtbai.sudoku.services.MyProjectService"/>
+        <toolWindow id="Sudoku" secondary="true" anchor="left" icon="/toolWindow/sudoku.png"
+                    factoryClass="com.github.burtbai.sudoku.SudokuPlugin"/>
     </extensions>
 
-    <applicationListeners>
-        <listener class="com.github.burtbai.sudoku.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
 </idea-plugin>
